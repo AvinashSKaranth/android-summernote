@@ -1,5 +1,15 @@
 # android-summernote
-Add WYSIWIG to your project by including this in your gradle
+To Add Offline WYSIWIG HTML Editor to your Android App
+
+Add this to your repositories
+```
+maven {
+        url "https://dl.bintray.com/avinashskaranth/maven/"
+      }
+```
+
+Add this to your dependencies
+
 ```
 compile 'in.nashapp.androidsummernote:androidsummernote:1.0.0'
 ```
