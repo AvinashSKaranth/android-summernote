@@ -1,6 +1,7 @@
 # android-summernote
 To Add Offline WYSIWIG HTML Editor to your Android App
-![alt tag](http://ultraimg.com/images/android-summernote.png)
+
+<img src="http://ultraimg.com/images/android-summernote.png" alt="android-summernote" width="240" height="">
 
 Add this to your repositories
 ```
