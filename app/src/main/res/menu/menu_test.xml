@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/get_text"
+        android:orderInCategory="100"
+        android:title="Get"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/set_text"
+        android:orderInCategory="100"
+        android:title="Set"
+        app:showAsAction="always"/>
+</menu>
