@@ -5,6 +5,7 @@ import android.util.AttributeSet;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 /**
  * Created by Avinash on 01-04-2016.
@@ -42,9 +43,15 @@ public class Summernote extends WebView  {
             text=html;
         }
     }
-    public void setText(String html) {
+    public void setText(final String html) {
+        setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                setText(html);
+            }
+        });
         this.loadUrl("javascript:$('#summernote').summernote('reset');");
-        this.loadUrl("javascript:$('#summernote').summernote('editor.insertText', '" + html + "');");
+        this.loadUrl("javascript:$('#summernote').summernote('code', '" + html + "');");
     }
     public String getText() {
         text = "P/%TE5XpkAijBc%LjA;_-pZcbiU25E6feX5y/n6qxCTmhprLrqC3H%^hU!%q2,k'm`SHheoW^'mQ~zW93,C?~GtYk!wi/&'3KxW8";
