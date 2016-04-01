@@ -1,6 +1,8 @@
 # android-summernote
-Add WYSIWIG to your project by including this
+Add WYSIWIG to your project by including this in your gradle
+```
 compile 'in.nashapp.androidsummernote:androidsummernote:1.0.0'
+```
 
 Add to your XML 
 ```
