@@ -15,12 +15,12 @@ Link the view in your Java Code
 Summernote summernote = (Summernote) findViewById(R.id.summernote);
 ```
 
-//Retrive HTML Data
+Retrive HTML Data
 ```
 String html_data = summernote.getText()
 ```
 
-//Set HTML Data
+Set HTML Data
 ```
 summernote.setText("Hello World");
 ```
