@@ -1,6 +1,8 @@
 # android-summernote
 To Add Offline WYSIWIG HTML Editor to your Android App
 
+<img src="http://ultraimg.com/images/android-summernote.png" alt="android-summernote" width="240" height="">
+
 Add this to your repositories
 ```
 maven {
@@ -11,7 +13,7 @@ maven {
 Add this to your dependencies
 
 ```
-compile 'in.nashapp.androidsummernote:androidsummernote:1.0.0'
+compile 'in.nashapp.androidsummernote:androidsummernote:1.0.1'
 ```
 
 Add to your XML 
@@ -34,5 +36,5 @@ String html_data = summernote.getText()
 
 Set HTML Data
 ```
-summernote.setText("Hello World");
+summernote.setText("<h2>Hello World</h2>");
 ```
