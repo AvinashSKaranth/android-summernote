@@ -13,7 +13,7 @@ maven {
 Add this to your dependencies
 
 ```
-compile 'in.nashapp.androidsummernote:androidsummernote:1.0.0'
+compile 'in.nashapp.androidsummernote:androidsummernote:1.0.1'
 ```
 
 Add to your XML 
