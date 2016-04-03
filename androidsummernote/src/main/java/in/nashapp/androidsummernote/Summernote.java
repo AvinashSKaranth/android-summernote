@@ -19,7 +19,7 @@ import java.io.File;
  */
 public class Summernote extends WebView  {
     String text="";
-    private static final int REQUEST_FILE_PICKER = 1;
+    private int REQUEST_FILE_PICKER = 1;
     private ValueCallback<Uri> mFilePathCallback4;
     private ValueCallback<Uri[]> mFilePathCallback5;
     Context context;
@@ -115,6 +115,9 @@ public class Summernote extends WebView  {
     }
     public void setMainactivity(Activity mainactivity) {
         this.mainactivity = mainactivity;
+    }
+    public void setRequestCodeforFilepicker(int i){
+        REQUEST_FILE_PICKER=i;
     }
     public void onActivityResult(int requestCode, int resultCode, Intent intent)
     {

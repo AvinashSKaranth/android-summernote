@@ -23,6 +23,7 @@ public class TestActivity extends AppCompatActivity {
         actionBar.setTitle("Android Summernote");
         summernote = (Summernote) findViewById(R.id.summernote);
         summernote.setMainactivity(this);
+        summernote.setRequestCodeforFilepicker(5);
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
