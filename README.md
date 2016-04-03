@@ -48,8 +48,11 @@ summernote.setText("<h2>Hello World</h2>");
 ```
 
 Known Issues
+
 Calling from Fragment
+
 Current Resolution
+
 Using summernote as a static variable in the Fragment and calling onActivityResult from the Main Activity
 ```
 In Fragment
