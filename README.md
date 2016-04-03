@@ -6,7 +6,7 @@ To Add Offline WYSIWYG HTML Editor to your Android App
 Add this to your dependencies
 
 ```
-compile 'in.nashapp.androidsummernote:androidsummernote:1.0.2'
+compile 'in.nashapp.androidsummernote:androidsummernote:1.0.3'
 ```
 
 Add to Mannifest (For adding images from Device)
@@ -28,6 +28,7 @@ Summernote summernote = (Summernote) findViewById(R.id.summernote);
 summernote.setMainactivity(this);
 //or 
 summernote.setMainactivity(getActivity());
+summernote.setRequestCodeforFilepicker(5);//Any Number with is not being used by other OnResultActivity
 ```
 
 Pass the on onActivityResult to Summernote. (Enables attaching images to the Document)
