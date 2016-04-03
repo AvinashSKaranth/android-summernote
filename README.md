@@ -3,13 +3,6 @@ To Add Offline WYSIWIG HTML Editor to your Android App
 
 <img src="http://ultraimg.com/images/android-summernote.png" alt="android-summernote" width="240" height="">
 
-Add this to your repositories
-```
-maven {
-        url "https://dl.bintray.com/avinashskaranth/maven/"
-      }
-```
-
 Add this to your dependencies
 
 ```
