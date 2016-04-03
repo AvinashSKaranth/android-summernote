@@ -127,9 +127,6 @@ public class Summernote extends WebView  {
                 {
                     Uri path = intent.getData();
                     mFilePathCallback4.onReceiveValue(path);
-                    /*String path = mainactivity.MediaUtility.getPath(mainactivity, result);
-                    Uri uri = Uri.fromFile(new File(path));
-                    mFilePathCallback4.onReceiveValue(uri);*/
                 }
                 else
                 {
@@ -141,9 +138,6 @@ public class Summernote extends WebView  {
                 Uri result = intent==null || resultCode!=Activity.RESULT_OK ? null : intent.getData();
                 if(result!=null)
                 {
-                    /*String path = intent.getPath(mainactivity, result);
-                    Uri uri = Uri.fromFile(new File(path));
-                    mFilePathCallback5.onReceiveValue(new Uri[]{ uri });*/
                     Uri path = intent.getData();
                     mFilePathCallback5.onReceiveValue(new Uri[]{path});
                 }

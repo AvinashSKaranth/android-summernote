@@ -1,22 +1,16 @@
 package in.nashapp.androidsummernotedemo;
-import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.ValueCallback;
-import android.webkit.WebChromeClient;
 import android.widget.Toast;
 import in.nashapp.androidsummernote.Summernote;
 
 public class TestActivity extends AppCompatActivity {
     Summernote summernote;
-    private ValueCallback<Uri> mUploadMessage;
-    private final static int FILECHOOSER_RESULTCODE=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -7,7 +7,7 @@ ext {
     libraryName = 'AndroidSummernote'
     artifact = 'androidsummernote'
 
-    libraryDescription = 'A WYSIWIG HTML Editor for Android based on summernote'
+    libraryDescription = 'A WYSIWYG HTML Editor for Android based on summernote'
 
     siteUrl = 'https://www.nashapp.in'
     gitUrl = 'https://github.com/AvinashSKaranth/android-summernote.git'
