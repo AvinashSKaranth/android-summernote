@@ -12,7 +12,7 @@ ext {
     siteUrl = 'https://www.nashapp.in'
     gitUrl = 'https://github.com/AvinashSKaranth/android-summernote.git'
 
-    libraryVersion = '1.0.2'
+    libraryVersion = '1.0.3'
 
     developerId = 'avinashskaranth'
     developerName = 'Avinash S Karanth'
