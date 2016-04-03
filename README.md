@@ -1,12 +1,17 @@
 # android-summernote
-To Add Offline WYSIWIG HTML Editor to your Android App
+To Add Offline WYSIWYG HTML Editor to your Android App
 
 <img src="http://ultraimg.com/images/android-summernote.png" alt="android-summernote" width="240" height="">
 
 Add this to your dependencies
 
 ```
-compile 'in.nashapp.androidsummernote:androidsummernote:1.0.1'
+compile 'in.nashapp.androidsummernote:androidsummernote:1.0.2'
+```
+
+Add to Mannifest (For adding images from Device)
+```
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 ```
 
 Add to your XML 
@@ -20,6 +25,18 @@ android:layout_height="match_parent"/>
 Link the view in your Java Code
 ```
 Summernote summernote = (Summernote) findViewById(R.id.summernote);
+summernote.setMainactivity(this);
+//or 
+summernote.setMainactivity(getActivity());
+```
+
+Pass the on onActivityResult to Summernote. (Enables attaching images to the Document)
+```
+@Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+        summernote.onActivityResult(requestCode, resultCode, intent);
+    }
 ```
 
 Retrive HTML Data
