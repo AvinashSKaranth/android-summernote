@@ -23,7 +23,6 @@ public class Summernote extends WebView  {
     private ValueCallback<Uri> mFilePathCallback4;
     private ValueCallback<Uri[]> mFilePathCallback5;
     Context context;
-    Activity mainactivity;
     public Summernote(Context context) {
         super(context);
         this.context =context;
@@ -31,10 +30,12 @@ public class Summernote extends WebView  {
     }
     public Summernote(Context context, AttributeSet attrs){
         super(context, attrs);
+        this.context =context;
         enable_summernote();
     }
     public Summernote(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        this.context =context;
         enable_summernote();
     }
     public void enable_summernote(){
@@ -54,24 +55,24 @@ public class Summernote extends WebView  {
                 mFilePathCallback4 = filePathCallback;
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
-                intent.setType("*/*");
-                mainactivity.startActivityForResult(Intent.createChooser(intent, "File Chooser"), REQUEST_FILE_PICKER);
+                intent.setType("image/*");
+                ((Activity)context).startActivityForResult(Intent.createChooser(intent, "File Chooser"), REQUEST_FILE_PICKER);
             }
 
             public void openFileChooser(ValueCallback filePathCallback, String acceptType) {
                 mFilePathCallback4 = filePathCallback;
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
-                intent.setType("*/*");
-                mainactivity.startActivityForResult(Intent.createChooser(intent, "File Chooser"), REQUEST_FILE_PICKER);
+                intent.setType("image/*");
+                ((Activity)context).startActivityForResult(Intent.createChooser(intent, "File Chooser"), REQUEST_FILE_PICKER);
             }
 
             public void openFileChooser(ValueCallback<Uri> filePathCallback, String acceptType, String capture) {
                 mFilePathCallback4 = filePathCallback;
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
-                intent.setType("*/*");
-                mainactivity.startActivityForResult(Intent.createChooser(intent, "File Chooser"), REQUEST_FILE_PICKER);
+                intent.setType("image/*");
+                ((Activity)context).startActivityForResult(Intent.createChooser(intent, "File Chooser"), REQUEST_FILE_PICKER);
             }
 
             @Override
@@ -79,8 +80,8 @@ public class Summernote extends WebView  {
                 mFilePathCallback5 = filePathCallback;
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.addCategory(Intent.CATEGORY_OPENABLE);
-                intent.setType("*/*");
-                mainactivity.startActivityForResult(Intent.createChooser(intent, "File Chooser"), REQUEST_FILE_PICKER);
+                intent.setType("image/*");
+                ((Activity)context).startActivityForResult(Intent.createChooser(intent, "File Chooser"), REQUEST_FILE_PICKER);
                 return true;
             }
         });
@@ -112,9 +113,6 @@ public class Summernote extends WebView  {
             }
         }catch (Exception e ){text = "Unable get the Text";}
         return text;
-    }
-    public void setMainactivity(Activity mainactivity) {
-        this.mainactivity = mainactivity;
     }
     public void setRequestCodeforFilepicker(int i){
         REQUEST_FILE_PICKER=i;

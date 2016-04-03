@@ -22,9 +22,7 @@
 <script>
 $(document).ready(function() {
  $('#summernote').summernote({
-  height: 300,                 // set editor height
-  minHeight: null,             // set minimum height of editor
-  maxHeight: null,             // set maximum height of editor
+  height: 1200,
   focus: true,
   placeholder: 'write here...',
   // set focus to editable area after initializing summernote
@@ -36,7 +34,7 @@ $(document).ready(function() {
     ['para', ['ul', 'ol', 'paragraph']],
     ['height', ['height']],
     ['table', ['table']],
-    ['insert', ['link', 'picture', 'hr']],
+    ['insert', ['link', 'picture','video','hr']],
     ['view', ['codeview']],
     ['help', ['help']]
   ],

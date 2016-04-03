@@ -22,7 +22,6 @@ public class TestActivity extends AppCompatActivity {
         actionBar.setLogo(R.mipmap.ic_launcher);
         actionBar.setTitle("Android Summernote");
         summernote = (Summernote) findViewById(R.id.summernote);
-        summernote.setMainactivity(this);
         summernote.setRequestCodeforFilepicker(5);
     }
     @Override
