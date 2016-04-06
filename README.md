@@ -1,4 +1,6 @@
 # android-summernote
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-android--summernote-green.svg?style=true)](https://android-arsenal.com/details/1/3392)
+
 To Add Offline WYSIWYG HTML Editor to your Android App
 
 <img src="http://ultraimg.com/images/android-summernote.png" alt="android-summernote" width="240" height="">
