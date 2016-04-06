@@ -49,6 +49,12 @@ Set HTML Data
 summernote.setText("<h2>Hello World</h2>");
 ```
 
+Certain chars are note being encoded in the editor. Please encode them before using setText. Will update it in next version
+```java
+String HTML=" I'am Android";
+summernote.setText(HTML.replaceAll("\"", "&quot;").replaceAll("& ", "&amp; ").replaceAll("'","&#39;"));
+```
+
 Known Issues
 
 * Calling from Fragment
