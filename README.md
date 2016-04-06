@@ -27,7 +27,7 @@ Add to your XML
 Link the view in your Java Code
 ```java
 Summernote summernote = (Summernote) findViewById(R.id.summernote);
-summernote.setRequestCodeforFilepicker(5);//Any Number with is not being used by other OnResultActivity
+summernote.setRequestCodeforFilepicker(5);//Any Number which is not being used by other OnResultActivity
 ```
 
 Pass the on onActivityResult to Summernote. (Enables attaching images to the Document)
