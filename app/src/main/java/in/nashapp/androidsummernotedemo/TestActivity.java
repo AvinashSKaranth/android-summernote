@@ -42,7 +42,7 @@ public class TestActivity extends AppCompatActivity {
                 Toast.makeText(this,summernote.getText(),Toast.LENGTH_SHORT).show();
                 break;
             case R.id.set_text:
-                summernote.setText("<h2>Hello World</h2>");
+                summernote.setText("<h2>Hello World ' \"</h2>");
                 break;
         }
         return true;

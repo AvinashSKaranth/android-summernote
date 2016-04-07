@@ -9,10 +9,10 @@ ext {
 
     libraryDescription = 'A WYSIWYG HTML Editor for Android based on summernote'
 
-    siteUrl = 'https://www.nashapp.in'
+    siteUrl = 'http://www.nashapp.in'
     gitUrl = 'https://github.com/AvinashSKaranth/android-summernote.git'
 
-    libraryVersion = '1.0.4'
+    libraryVersion = '1.0.5'
 
     developerId = 'avinashskaranth'
     developerName = 'Avinash S Karanth'

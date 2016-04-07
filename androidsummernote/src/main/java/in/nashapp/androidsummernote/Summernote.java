@@ -100,7 +100,7 @@ public class Summernote extends WebView  {
             }
         });
         this.loadUrl("javascript:$('#summernote').summernote('reset');");
-        this.loadUrl("javascript:$('#summernote').summernote('code', '" + html + "');");
+        this.loadUrl("javascript:$('#summernote').summernote('code', '" + html.replace("'","\\'") + "');");
     }
     public String getText() {
         text = "P/%TE5XpkAijBc%LjA;_-pZcbiU25E6feX5y/n6qxCTmhprLrqC3H%^hU!%q2,k'm`SHheoW^'mQ~zW93,C?~GtYk!wi/&'3KxW8";
