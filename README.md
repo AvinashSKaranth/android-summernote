@@ -8,7 +8,7 @@ To Add Offline WYSIWYG HTML Editor to your Android App
 Add this to your dependencies
 
 ```groovy
-compile 'in.nashapp.androidsummernote:androidsummernote:1.0.4'
+compile 'in.nashapp.androidsummernote:androidsummernote:1.0.5'
 ```
 
 Add to Manifest (For adding images from Device)
@@ -46,13 +46,7 @@ String html_data = summernote.getText()
 
 Set HTML Data
 ```java
-summernote.setText("<h2>Hello World</h2>");
-```
-
-Certain chars are note being encoded in the editor. Please encode them before using setText. Will update it in next version
-```java
-String HTML=" I'am Android";
-summernote.setText(HTML.replaceAll("\"", "&quot;").replaceAll("'","&#39;"));
+summernote.setText("<h2>Hello World.<h2><br><h3> I'am Summernote</h3>");
 ```
 
 Known Issues
