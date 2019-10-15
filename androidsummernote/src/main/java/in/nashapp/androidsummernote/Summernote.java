@@ -108,7 +108,7 @@ public class Summernote extends WebView  {
         int i=0;
         try{
             while(text.equals("P/%TE5XpkAijBc%LjA;_-pZcbiU25E6feX5y/n6qxCTmhprLrqC3H%^hU!%q2,k'm`SHheoW^'mQ~zW93,C?~GtYk!wi/&'3KxW8")&&i<100){
-                Thread.sleep(50);
+                Thread.sleep(200);
                 i++;
             }
         }catch (Exception e ){text = "Unable get the Text";}
